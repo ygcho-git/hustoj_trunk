@@ -23,9 +23,12 @@ RUN    	DEBIAN_FRONTEND=noninteractive  apt-get -y install --no-install-recommen
 RUN    	DEBIAN_FRONTEND=noninteractive  apt-get -y install --no-install-recommends	wget
 RUN     apt-get -y install sqlite3
 RUN     useradd -m -u 1536 judge
+
+
 RUN     cd /home/judge/ && \ 
-	wget dl.hustoj.com/hustoj.tar.gz && \
-        tar xzf hustoj.tar.gz 
+	wget raw.githubusercontent.com/melongist/CSL/master/HUSTOJ/hustojsrc.zip \
+        unzip hustojsrc.zip -d /home/judge/
+
 #Github update
 #RUN	svn up /home/judge/src 
 RUN     cd /home/judge/src/core/ && bash make.sh 
