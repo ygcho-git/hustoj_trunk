@@ -26,7 +26,8 @@ RUN     useradd -m -u 1536 judge
 
 
 RUN     cd /home/judge/ && \ 
-	wget raw.githubusercontent.com/melongist/CSL/master/HUSTOJ/hustojsrc.zip \
+	wget https://github.com/ygcho-git/hustoj_trunk/blob/main/hustojsrc.zip\?raw\=true \
+	mv hustojsrc.zip\?raw=true hustojsrc.zip \
         unzip hustojsrc.zip -d /home/judge/
 
 #Github update
