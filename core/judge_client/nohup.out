@@ -1,0 +1,14 @@
+PING github.com (13.229.188.59) 56(84) bytes of data.
+64 bytes from github.com (13.229.188.59): icmp_seq=1 ttl=33 time=131 ms
+64 bytes from github.com (13.229.188.59): icmp_seq=2 ttl=33 time=130 ms
+64 bytes from github.com (13.229.188.59): icmp_seq=4 ttl=33 time=129 ms
+64 bytes from github.com (13.229.188.59): icmp_seq=5 ttl=33 time=129 ms
+
+--- github.com ping statistics ---
+5 packets transmitted, 4 received, 20% packet loss, time 4032ms
+rtt min/avg/max/mdev = 128.830/129.593/130.502/0.709 ms
+正在升级 'src':
+版本 7078。
+正在升级 '/var/www/virtual/cdn.hustoj.com/htdocs':
+GU   /var/www/virtual/cdn.hustoj.com/htdocs/include/db_info.inc.php
+更新到版本 7078。
